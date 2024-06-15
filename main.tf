@@ -16,7 +16,7 @@ resource "aws_subnet" "public-subnet" {
     cidr_block = var.cidr_public
     availability_zone = var.public-subnet-zone
     tags = {
-      name = var.public-subnet
+      Name = var.public-subnet
     }
   
 }
