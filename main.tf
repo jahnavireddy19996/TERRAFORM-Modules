@@ -47,12 +47,12 @@ resource "aws_route" "rt" {
     gateway_id = aws_internet_gateway.internet-gateway.id
 
 }
-resource "aws_route_table_association" "public A" {
+resource "aws_route_table_association" "public-A" {
       route_table_id = aws_route_table.rt-public.id
       subnet_id = aws_subnet.public-subnet.id 
 }
 
-resource "aws_route_table_association" "private A" {
+resource "aws_route_table_association" "private-A" {
       route_table_id = aws_route_table.rt-private.id
       subnet_id = aws_subnet.private-subnet.id 
 }
